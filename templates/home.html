@@ -16,6 +16,7 @@
         <div id="todo-list">
             {% for todo in todos %}
             <p>{{todo.message}}</p>
+            <a href="/delete/{{todo.id}}">Delete</a>
             {% endfor %}
         </div>
     </main>
